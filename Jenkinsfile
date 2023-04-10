@@ -12,5 +12,10 @@ pipeline {
                 dotnetBuild configuration: 'Debug', sdk: '.NET 6'
             }
         }
+        stage('docker image') {
+            steps {
+                sh 'docker build -t weatherforecastapi:latest .'
+            }
+        }
     }
 }
