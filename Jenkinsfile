@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                dotnetBuild configuration: 'Debug', project: 'WeatherForecastApi.csproj'
+                dotnetBuild configuration: 'Debug'
             }
         }
     }
