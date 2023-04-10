@@ -19,7 +19,7 @@ pipeline {
         }
         stage('docker run') {
             steps {
-                sh 'docker run -p 5000:80 weatherforecastapi:latest'
+                sh 'docker run -d -p 5000:80 weatherforecastapi:latest'
             }
         }
     }
