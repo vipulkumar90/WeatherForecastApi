@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                dotnetBuild configuration: 'Debug'
+                dotnetBuild configuration: 'Debug', sdk: '.NET 6'
             }
         }
     }
