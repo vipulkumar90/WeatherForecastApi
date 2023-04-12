@@ -17,7 +17,7 @@ namespace WeatherForecastApi.Controllers
         {
             _logger = logger;
         }
-
+        //added comment
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
